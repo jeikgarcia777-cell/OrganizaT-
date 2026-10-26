@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - OrganizaT</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .modal-fondo {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .modal-contenido {
+            background-color: #1a2b4a;
+            margin: 5% auto;
+            padding: 25px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            border: 2px solid #4fd1c5;
+            position: relative;
+        }
+        .cerrar {
+            color: #4fd1c5;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: -5px;
+        }
+        .cerrar:hover {
+            color: white;
+        }
+        .boton {
+            background: linear-gradient(135deg, #4fd1c5, #2a9d8f);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 17px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 15px;
+        }
+        .fila-botones {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fila-contacto {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .item-contacto {
+            text-align: center;
+            color: white;
+        }
+        .item-contacto a {
+            color: #4fd1c5;
+            text-decoration: none;
+        }
+        .imagen-modal {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        h2 {
+            color: #4fd1c5;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+    <header>
+        <nav class="menu">
+            <div class="texto-logo">OrganizaT</div>
+            <div class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="ST.html">ST</a>
+                <a href="Evidencias.html">Evidencias</a>
+                <a href="contacto.html" class="activo">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 20px; max-width: 920px; margin: 20px auto; padding: 0 10px;">
+            <div style="flex-shrink: 0; margin-left: 5px;">
+                <img src="logo.jpeg" alt="Logo OrganizaT" style="width: 150px; height: 150px; object-fit: contain;">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="CN.jpeg" alt="Contacto" style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px;">
+            </div>
+        </div>
+ <h2 class="titulo-contacto">PARTICIPANTES</rb></h2>
+      
+        <div class="fila-botones">
+            <button class="boton" onclick="document.getElementById('modal-hoja').style.display='block'"> JEIK GARCIA</button>
+            <button class="boton" onclick="document.getElementById('modal-foto').style.display='block'">JOHAN DUCUARA</button>
+        </div>
+
+        
+        <div class="fila-contacto">
+            <div class="item-contacto">
+                <strong> WhatsApp</strong><br>
+                <a href="https://wa.me/5730538973" target="_blank">+57 305 309 9583</a>
+            </div>
+            <div class="item-contacto">
+                <strong> Correo</strong><br>
+                <a href="mailto:organizat.info@gmail.com">organizat.info@gmail.com</a>
+            </div>
+            <div class="item-contacto">
+                <strong>📍 Ubicación</strong><br>
+                Colombia
+            </div>
+        </div>
+
+        
+        <div id="modal-hoja" class="modal-fondo" onclick="if(event.target === this) this.style.display='none'">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="document.getElementById('modal-hoja').style.display='none'">&times;</span>
+                <h2>participante 1</h2>
+                <img src="hojavida.jpeg" alt="Hoja de Vida" class="imagen-modal">
+            </div>
+        </div>
+
+        
+        <div id="modal-foto" class="modal-fondo" onclick="if(event.target === this) this.style.display='none'">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="document.getElementById('modal-foto').style.display='none'">&times;</span>
+                <h2>👥 Participante 2</h2>
+                <img src="hojavida1.jpeg" alt="Participantes" class="imagen-modal">
+            </div>
+        </div>
+
+    </main>
+    <footer style="background: rgba(0, 0, 0, 0.3); padding: 25px; text-align: center; color: white; border-top: 1px solid rgba(79, 209, 197, 0.3); margin-top: 60px; clear: both;">
+    <p style="margin: 0; font-size: 15px;">© 2026 OrganizaT. Todos los derechos reservados.</p>
+    <p style="margin: 8px 0 0; font-size: 13px; color: #b0b0b0;">Proyecto educativo y académico. Medellín, Colombia.</p>
+</footer>
+</body>
+</html>

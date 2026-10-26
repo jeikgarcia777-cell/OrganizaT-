@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencias - OrganizaT</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .titulo-evidencias {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-family: "Georgia", serif;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .card p {
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+        @media (max-width: 650px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+    <header>
+        <nav class="menu">
+            <div class="texto-logo">OrganizaT</div>
+            <div class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="ST.html">ST</a>
+                <a href="Evidencias.html" class="activo">Evidencias</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 20px; max-width: 920px; margin: 20px auto; padding: 0 10px; flex-wrap: wrap;">
+            <div style="flex-shrink: 0; margin-left: 5px;">
+                <img src="logo.jpeg" alt="Logo OrganizaT" style="width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 0 12px rgba(79, 209, 197, 0.35));">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="EV.png" alt="Evidencias" style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px;">
+            </div>
+        </div>
+
+        <h2 class="titulo-evidencias">EVIDENCIAS TOMADAS CON LOS ESTUDIANDES DEL COLEGIO</rb></h2>
+        <div class="grid">
+            <div class="card">
+                <img src="foto1.jpeg" alt="Evidencia 1">
+                <p><b>Foto 1:</b> En esta evidencia estamos explicando a los estudiantes por qué es importante la organización de tareas.</p>
+            </div>
+            <div class="card">
+                <img src="foto2.jpeg" alt="Evidencia 2">
+                <p><b>Foto 2:</b> En esta evidencia le estamos explicando a los estudiantes por qué deben organizar sus tareas.</p>
+            </div>
+            <div class="card">
+                <img src="foto3.jpeg" alt="Evidencia 3">
+                <p><b>Foto 3:</b> Foto del juego.</p>
+            </div>
+            <div class="card">
+                <img src="foto4.jpeg" alt="Evidencia 4">
+                <p><b>Foto 4:</b> En esta foto estamos poniendo en evidencia que una estudiante está haciendo un formulario de cómo organiza las tareas.</p>
+            </div>
+            <div class="card">
+                <img src="foto5.jpeg" alt="Evidencia 5">
+                <p><b>Foto 5:</b> Formulario terminado.</p>
+            </div>
+            <div class="card">
+                <img src="foto6.jpeg" alt="Evidencia 6">
+                <p><b>Foto 6:</b> La estudiante está haciendo el formulario.</p>
+            </div>
+            <div class="card">
+                <img src="foto7.jpeg" alt="Evidencia 7">
+                <p><b>Foto 7:</b> En esta foto mi compañero les explica cómo organizarse.</p>
+            </div>
+            <div class="card">
+                <img src="foto8.jpeg" alt="Evidencia 8">
+                <p><b>Foto 8:</b> En esta foto explica mi compañero cómo deben disminuir el uso del celular.</p>
+            </div>
+            <div class="card">
+                <img src="foto9.jpeg" alt="Evidencia 9">
+                <p><b>Foto 9:</b> En esta foto mi compañero explica cómo es el proceso del formulario.</p>
+            </div>
+            <div class="card">
+                <img src="foto10.jpeg" alt="Evidencia 10">
+                <p><b>Foto 10:</b> Se muestra el récord del juego.</p>
+            </div>
+            <div class="card">
+                <img src="foto11.jpeg" alt="Evidencia 11">
+                <p><b>Foto 11:</b> Nuestra compañera prueba nuestro juego.</p>
+            </div>
+        </div>
+    </main>
+    <footer style="background: rgba(0, 0, 0, 0.3); padding: 25px; text-align: center; color: white; border-top: 1px solid rgba(79, 209, 197, 0.3); margin-top: 40px;">
+    <p style="margin: 0; font-size: 15px;">© 2026 OrganizaT. Todos los derechos reservados.</p>
+    <p style="margin: 8px 0 0; font-size: 13px; color: #b0b0b0;">Este proyecto fue creado con fines educativos y académicos.</p>
+</footer>
+</body>
+</html>

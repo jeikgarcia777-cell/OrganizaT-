@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST - OrganizaT</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .fila-principal {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .columna-izquierda {
+            flex: 2;
+            min-width: 350px;
+        }
+        .columna-qr {
+            flex: 1;
+            min-width: 220px;
+            display: flex;
+            justify-content: center;
+        }
+        .caja-qr {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            width: 100%;
+            max-width: 260px;
+        }
+        .caja-qr img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .caja-qr p {
+            color: white;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        .fila-dentro {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .texto-lado {
+            flex: 1;
+            min-width: 200px;
+        }
+        .imagen-lado {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        .imagen-lado img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+        .caja-informacion {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px 25px;
+            color: white;
+            margin-bottom: 25px;
+        }
+        .caja-informacion h2 {
+            margin-bottom: 12px;
+            color: #cce0ff;
+            font-size: 20px;
+        }
+        .caja-informacion p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-family: "Georgia", serif;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 35px;
+        }
+        @media (max-width: 768px) {
+            .fila-principal { flex-direction: column; }
+            .fila-dentro { flex-direction: column; text-align: center; }
+            .caja-qr { max-width: 240px; }
+        }
+    </style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+    <header>
+        <nav class="menu">
+            <div class="texto-logo">OrganizaT</div>
+            <div class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                
+                <a href="ST.html" class="activo">ST</a>
+                <a href="Evidencias.html">Evidencias</a>
+                <a href="contacto.html">contacto</a>
+            </div>
+        </nav>
+    </header>
+
+     <div style="display: flex; align-items: center; justify-content: flex-start; gap: 20px; max-width: 920px; margin: 20px auto; padding: 0 10px; flex-wrap: wrap;">
+            <div style="flex-shrink: 0; margin-left: 5px;">
+                <img src="logo.jpeg" alt="Logo OrganizaT" style="width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 0 12px rgba(79, 209, 197, 0.35));">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="STG.png" alt="OrganizaT" style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px;">
+            </div>
+        </div>
+
+        <div class="fila-principal">
+            <div class="columna-izquierda">
+                <div class="caja-informacion">
+                    <div class="fila-dentro">
+                        <div class="texto-lado">
+                            <h2>💡 Idea del Juego</h2>
+                            <p>La idea fue crear un videojuego educativo que represente la organización de tareas y la gestión del tiempo. Queríamos mostrar cómo cumplir objetivos de forma ordenada y evitar las distracciones que nos alejan de nuestras metas.</p>
+                        </div>
+                        <div class="imagen-lado">
+                            <img src="juego1.jpeg" alt="Código del juego">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caja-informacion">
+                    <div class="fila-dentro">
+                        <div class="imagen-lado">
+                            <img src="juego2.jpeg" alt="Captura del juego">
+                        </div>
+                        <div class="texto-lado">
+                            <h2>⚙️ ¿Cómo funciona?</h2>
+                            <p>El jugador se mueve con las flechas del teclado dentro de un cuaderno abierto. Debe recoger elementos útiles como el lápiz, el cuaderno y la computadora, que representan las tareas. También debe evitar las distracciones y enemigos. Cada tarea completada suma puntos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columna-qr">
+                <div class="caja-qr">
+                    <img src="qr.jpeg" alt="Código QR del juego">
+                    <p>📱 Escanea para jugar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="caja-informacion">
+            <h2>✅ ¿Por qué puede ser una posible solución?</h2>
+            <p>El juego convierte un tema serio en algo divertido y fácil de entender. Ayuda a ver de forma sencilla cómo organizar nuestras prioridades y qué cosas nos distraen. Es una forma de aprender buenos hábitos sin que se sienta como una clase aburrida.</p>
+        </div>
+
+        <div class="caja-informacion">
+            <h2>📝 Conclusión</h2>
+            <p>El videojuego es una gran herramienta para aprender a organizarse. Combina entretenimiento con un mensaje claro: que cumplir nuestras tareas y evitar distracciones nos ayuda a alcanzar nuestras metas. Demuestra que se puede aprender de forma dinámica.</p>
+        </div>
+    </section>
+<footer style="background: rgba(0, 0, 0, 0.3); padding: 25px; text-align: center; color: white; border-top: 1px solid rgba(79, 209, 197, 0.3); margin-top: 40px;">
+    <p style="margin: 0; font-size: 15px;">© 2026 OrganizaT. Todos los derechos reservados.</p>
+    <p style="margin: 8px 0 0; font-size: 13px; color: #b0b0b0;">Este proyecto fue creado con fines educativos y académicos.</p>
+</footer>
+</body>
+</html>
